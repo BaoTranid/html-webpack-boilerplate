@@ -1,15 +1,26 @@
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  text-align: center;
-}
+$orange: #FF4500;
+
+@import "fonts.scss";
+@import "font-icon.scss";
+@import "utils.scss";
+@import "flex.scss";
+@import "layouts/header.scss";
+@import "~bootstrap/scss/bootstrap";
 
 img {
-  display: block;
-  margin: 50px auto;
-}
-
-.images {
-  width: 500px;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.body-wrapper {
+  max-width: 100%;
+  overflow: hidden;
 }

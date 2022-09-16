@@ -59,6 +59,10 @@ module.exports = {
         from: './src/static/',
         to: './static/',
       },
+      {
+        from: './src/fonts/',
+        to: './fonts/',
+      },
     ]),
     ...generateHTMLPlugins(),
   ],
