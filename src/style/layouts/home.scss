@@ -214,6 +214,12 @@
       padding: 5px 10px;
       text-align: center;
     }
+    &__name2 {
+      text-align: center;
+      a {
+        color: $orange
+      }
+    }
   }
 }
 
@@ -328,5 +334,18 @@
         }
       }
     }
+  }
+}
+
+.partner-wrapper {
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2D2D2D;
+    line-height: 1.4em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }

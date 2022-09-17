@@ -1,0 +1,137 @@
+.footer-infos-wrapper {
+  background-color: $orange;
+  padding: 40px 0 10px;
+  &__layout {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+    > li {
+      list-style: none;
+      flex: 1 auto;
+      padding: 0 10px;
+      &:nth-child(1) {
+        flex: 0 30%;
+        @media (max-width: 991px) {
+          flex: 0 100%;
+        }
+      }
+      &:nth-child(3) {
+        flex: 0 20%;
+        min-width: 200px;
+        @media (max-width: 767px) {
+          flex: 0 100%;
+        }
+      }
+    }
+  }
+}
+
+.footer-infos-box {
+  margin-bottom: 30px;
+  &__logo {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__infos {
+    padding: 0;
+    margin: 0;
+    > li {
+      list-style: none;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        display: flex;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+      }
+    }
+  }
+  &__form {
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    padding-right: 100px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    input {
+      border: none;
+      outline: none;
+      background-color: #fff;
+      height: 38px;
+      line-height: 38px;
+      padding: 0 10px;
+      width: 100%;
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      border: none;
+      outline: none;
+      height: 38px;
+      text-align: center;
+      background-color: #FF9800;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+  &__menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    margin: 0 -10px;
+    > li {
+      list-style: none;
+      padding: 0 10px;
+      .title {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 8px;
+      }
+      > ul {
+        padding: 0;
+        margin: 0;
+        > li {
+          list-style: none;
+          margin-bottom: 5px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-copy-right {
+  background-color: #FF9800;
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      color: #fff;
+      flex: 1 50%;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+}

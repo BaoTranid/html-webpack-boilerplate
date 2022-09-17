@@ -6,11 +6,18 @@ $red: #FA0000;
 @import "font-icon.scss";
 @import "utils.scss";
 @import "flex.scss";
+@import "block.scss";
 @import "text.scss";
 @import "images.scss";
+@import "color.scss";
 @import "layouts/header.scss";
 @import "layouts/home.scss";
+@import "layouts/footer.scss";
+@import "layouts/mobile.scss";
+@import "plugins/slick.scss";
 @import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 img {
   max-width: 100%;
