@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('./fonts/icomoon.eot?e4z0es');
-  src:  url('./fonts/icomoon.eot?e4z0es#iefix') format('embedded-opentype'),
-    url('./fonts/icomoon.ttf?e4z0es') format('truetype'),
-    url('./fonts/icomoon.woff?e4z0es') format('woff'),
-    url('./fonts/icomoon.svg?e4z0es#icomoon') format('svg');
+  src:  url('/fonts/icomoon.eot?e4z0es');
+  src:  url('/fonts/icomoon.eot?e4z0es#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?e4z0es') format('truetype'),
+    url('/fonts/icomoon.woff?e4z0es') format('woff'),
+    url('/fonts/icomoon.svg?e4z0es#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -141,10 +141,16 @@
 }
 
 [class^="icon-bg-"], [class*=" icon-bg-"] {
-  display: block;
+  display: inline-block;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  vertical-align: middle;
+  &.size14 {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+  }
   &.size16 {
     width: 16px;
     height: 16px;
@@ -154,6 +160,11 @@
     width: 20px;
     height: 20px;
     min-width: 20px;
+  }
+  &.size60 {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
   }
 }
 
@@ -178,5 +189,23 @@
   }
   &-bag {
     background-image: url(../static/icons/bag.png);
+  }
+  &-menu {
+    background-image: url(../static/icons/menu.png);
+  }
+  &-desk {
+    background-image: url(../static/icons/desk.png);
+  }
+  &-subtract {
+    background-image: url(../static/icons/subtract.png);
+  }
+  &-arhive {
+    background-image: url(../static/icons/arhive.png);
+  }
+  &-dimond {
+    background-image: url(../static/icons/dimond.png);
+  }
+  &-ticket {
+    background-image: url(../static/icons/ticket.png);
   }
 }

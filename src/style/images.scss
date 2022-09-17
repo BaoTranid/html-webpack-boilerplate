@@ -1,0 +1,14 @@
+.img-background {
+  display: block;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 65%;
+  font-size: 0.0001px;
+  img {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
