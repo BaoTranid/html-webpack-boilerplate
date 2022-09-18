@@ -1,0 +1,46 @@
+.checkbox-comp {
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  align-items: center;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #FF4500;
+    font-size: 9px;
+    line-height: 16px;
+    text-align: center;
+    color: transparent;
+  }
+  &:hover {
+    input ~ .checkmark {
+      color: #FF4500;
+    }
+  }
+  input:checked ~ .checkmark {
+    color: #FF4500;
+  }
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .name {
+    font-size: 14px;
+    margin-left: 25px;
+    line-height: 1.3em;
+  }
+}

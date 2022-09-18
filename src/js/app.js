@@ -1,4 +1,6 @@
 import $ from 'jquery';
+import 'bootstrap';
+import '@popperjs/core';
 import 'slick-carousel';
 
 $('.slider-wrapper').slick({
