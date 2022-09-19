@@ -154,13 +154,16 @@
 
 .detail-infos-block {
   display: flex;
-  margin: 0 4px;
+  margin: 0 -4px;
   @media (max-width: 767px) {
     flex-wrap: wrap;
   }
   &__gallery {
     flex: 0 55%;
     padding: 0 4px;
+    @media (max-width: 767px) {
+      flex: 0 100%;
+    }
     &__box {
       background-color: #fff;
       padding: 10px;
@@ -169,6 +172,9 @@
   &__infos {
     flex: 0 45%;
     padding: 0 4px;
+    @media (max-width: 767px) {
+      flex: 0 100%;
+    }
     &__box {
       background-color: #fff;
       padding: 20px 15px;
@@ -238,10 +244,10 @@
       margin-right: 10px;
       &--down {
         position: absolute;
+        left: 0;
         width: 22px;
         height: 37px;
         line-height: 37px;
-        left: 0;
       }
       &--up {
         position: absolute;
@@ -271,6 +277,55 @@
       border: none;
       outline: none;
       border-radius: 5px;
+    }
+  }
+}
+
+.tab-detail {
+  margin: 0 -5px;
+  &-item {
+    padding: 0 5px;
+    &__link {
+      border: none;
+      outline: none;
+      background: #D9D9D9;
+      font-size: 14px;
+      font-weight: 700;
+      color: #494949;
+      text-transform: uppercase;
+      padding: 12px;
+      &.active {
+        background-color: #FF4500;
+        color: #fff;
+      }
+    }
+  }
+}
+.comment-block {
+  .comment-star {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    li {
+      list-style: none;
+    }
+  }
+  .comment-form {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.slider-detail-wrapper {
+  max-width: 423px;
+  margin: 0 auto;
+  @media (max-width: 500px) {
+    max-width: 300px;
+  }
+  .slider-nav-detail {
+    &__item {
+      padding: 5px;
     }
   }
 }

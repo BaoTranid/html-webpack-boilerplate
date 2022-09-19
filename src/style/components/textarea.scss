@@ -1,0 +1,11 @@
+.textarea-comp {
+  background: #FFFFFF;
+  border: 1px solid #989898;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  &:focus {
+    border-color: rgba(255, 69, 0, 0.5);
+  }
+}

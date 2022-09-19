@@ -1,0 +1,16 @@
+.form-control-comp {
+  label {
+    font-size: 18px;
+    font-weight: 700;
+    color: #494949;
+    margin: 0;
+    margin-bottom: 8px;
+    line-height: 100%;
+    .required {
+      color: #f00;
+      font-size: 13px;
+      vertical-align: text-top;
+      margin-left: 5px;
+    }
+  }
+}
