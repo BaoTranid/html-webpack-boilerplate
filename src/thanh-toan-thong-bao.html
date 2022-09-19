@@ -71,143 +71,91 @@
           <ul class="breadcrumb-nav__list">
             <li><a href="">Trang chủ</a></li>
             <li><a href="">Giỏ hàng</a></li>
-            <li><a href="" class="active">Thanh toán đặt hàng</a></li>
+            <li><a href="">Thanh toán đặt hàng</a></li>
+            <li><a href="" class="active">Thông báo đơn hàng</a></li>
           </ul>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-6">
-            <div class="background-white p20 mb30">
-              <h2 class="font-size-18 font-weight-700 mb15">Thông tin nhận hàng</h2>
-              <form action="">
-                <div class="form-control-comp mb20">
-                  <input class="input-comp" type="text" placeholder="Họ và tên">
-                  <p class="error">*Vui lòng điền đầy đủ thông tin</p>
-                </div>
-                <div class="form-control-comp mb20">
-                  <input class="input-comp" type="text" placeholder="Số điện thoại người nhận">
-                </div>
-                <div class="form-control-comp mb20">
-                  <input class="input-comp" type="text" placeholder="Tỉnh thành">
-                </div>
-                <div class="form-control-comp mb20">
-                  <input class="input-comp" type="text" placeholder="Quận / Huyện">
-                </div>
-                <div class="form-control-comp mb20">
-                  <input class="input-comp" type="text" placeholder="Phường / Xã">
-                </div>
-                <div class="form-control-comp mb20">
-                  <input class="input-comp" type="text" placeholder="Địa chỉ">
-                </div>
-                <div class="form-control-comp mb20">
-                  <textarea class="textarea-comp" name="" id="" cols="30" rows="5"
-                    placeholder="Ghi chú  (tùy chọn)"></textarea>
-                </div>
-                <ul class="p0 m0 order-formality">
+          <div class="col-12 col-sm-12 col-md-8">
+            <div class="border-radius-10 background-white py15 px20 mb30">
+              <h1 class="font-size-18 font-weight-700 m0 mb10 color-orange">Thông báo đơn hàng</h1>
+              <p>Cảm ơn đã mua hàng, đơn hàng của bạn đang được xử lý</p>
+              <div class="order-notification-bill">
+                <ul>
                   <li>
-                    <label class="checkbox-comp size24">
-                      <input type="checkbox" checked>
-                      <span class="checkmark icon-check"></span>
-                      <span class="name">Giao hàng và thanh toán tại cửa hàng</span>
-                    </label>
+                    <div>
+                      <p class="name">MÃ ĐƠN HÀNG</p>
+                      <strong>#123456789</strong>
+                    </div>
                   </li>
                   <li>
-                    <label class="checkbox-comp size24">
-                      <input type="checkbox">
-                      <span class="checkmark icon-check"></span>
-                      <span class="name">Giao hàng và thanh toán tại nhà</span>
-                    </label>
+                    <div>
+                      <p class="name">NGÀY ĐẶT</p>
+                      <strong>20/9/2022</strong>
+                    </div>
                   </li>
                   <li>
-                    <label class="checkbox-comp size24">
-                      <input type="checkbox">
-                      <span class="checkmark icon-check"></span>
-                      <span class="name">Giao hàng tại nhà và thanh toán online</span>
-                    </label>
+                    <div>
+                      <p class="name">TỔNG CỘNG</p>
+                      <strong>100.000 đ</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <p class="name">PHƯƠNG THỨC GIAO HÀNG THANH TOÁN </p>
+                      <strong>Giao hàng tại nhà và thanh toán online</strong>
+                    </div>
                   </li>
                 </ul>
-              </form>
+              </div>
+              <h3 class="font-size-18 font-weight-700 m0 mb10">Chi tiết đơn hàng</h3>
+              <div class="border-bottom pb10 mb10">
+                <div class="order-notification-infos mb10">
+                  <strong>SẢN PHẨM</strong>
+                  <strong>TỔNG CỘNG</strong>
+                </div>
+                <div class="order-notification-infos">
+                  <p class="m0 mb10"><a href="">ỐC VÍT CÔNG NGHIỆP R01</a><span>x1000</span></p>
+                  <p class="m0 mb10 white-space-pre">10.000.000 đ</p>
+                </div>
+                <div class="order-notification-infos">
+                  <p class="m0 mb10"><a href="">ỐC VÍT CÔNG NGHIỆP R01</a><span>x1000</span></p>
+                  <p class="m0 mb10 white-space-pre">10.000.000 đ</p>
+                </div>
+              </div>
+              <p class="order-notification-infos border-bottom pb10 mb10"><strong class="mr10">Giao nhận
+                  hàng:</strong><span class="text-align-right">Miễn phí</span></p>
+              <p class="order-notification-infos mb15"><strong class="mr10">Phương thức thanh toán:</strong><span
+                  class="text-align-right">Chuyển khoản ngân hàng</span></p>
+              <p class="order-notification-infos mb5"><strong class="mr10">Tổng cộng:</strong><span
+                  class="text-align-right white-space-pre">20.000.000 đ</span></p>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6">
-            <div class="background-white mb30">
-              <h5 class="font-size-16 px10 py10 m0">Thông tin đơn hàng</h5>
-              <div class="">
-                <div class="table-responsive">
-                  <table class="table m0 cart-table order-table">
-                    <tbody>
-                      <tr class="align-middle">
-                        <td class="text-center">1</td>
-                        <td>
-                          <div class="cart-product-box">
-                            <div class="cart-product-box__image">
-                              <a href="" class="img-background height100"
-                                style="background-image: url(./static/product.jpg);"><img src="./static/product.jpg"
-                                  alt="san pham"></a>
-                            </div>
-                            <div class="cart-product-box__infos">
-                              <h4 class="name"><a href="">Ốc vít công nghiệp R01</a></h4>
-                              <p class="m0 price">100.000 đ</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="text-center">
-                          <input type="number" name="" value="100" class="number">
-                          <p class="order-price">100.000.000 đ</p>
-                        </td>
-                      </tr>
-                      <tr class="align-middle">
-                        <td class="text-center">2</td>
-                        <td>
-                          <div class="cart-product-box">
-                            <div class="cart-product-box__image">
-                              <a href="" class="img-background height100"
-                                style="background-image: url(./static/product.jpg);"><img src="./static/product.jpg"
-                                  alt="san pham"></a>
-                            </div>
-                            <div class="cart-product-box__infos">
-                              <h4 class="name"><a href="">Ốc vít công nghiệp R01</a></h4>
-                              <p class="m0 price">100.000 đ</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="text-center">
-                          <input type="number" name="" value="100" class="number">
-                          <p class="order-price">100.000.000 đ</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="px20 py15 border-bottom">
-                  <div class="row gx-3">
-                    <div class="col">
-                      <input class="input-comp" type="text" placeholder="Nhập mã giảm giá">
-                    </div>
-                    <div class="col-auto">
-                      <button type="button" class="button-comp">Áp dụng</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="px20 py15 order-sumary border-bottom">
-                  <p class="m0 order-sumary__row">
-                    <span>Tạm tính</span>
-                    <span>100.000.000 đ</span>
-                  </p>
-                  <p class="m0 order-sumary__row">
-                    <span>Phí vận chuyển</span>
-                    <span>Miễn phí</span>
-                  </p>
-                </div>
-                <div class="px20 py15">
-                  <p class="order-total font-size-18 font-weight-700"><span>TỔNG CỘNG</span><span
-                      class="color-orange">100.000.000 đ</span></p>
-                  <button class="button-comp orange full">Xác nhận đặt hàng</button>
-                  <p class="m0 mt15"><a href="">
-                      << Quay về giỏ hàng</a>
-                  </p>
-                </div>
+          <div class="col-12 col-sm-12 col-md-4">
+            <div class="border-radius-10 background-white py15 px20 mb30">
+              <h2 class="font-size-18 font-weight-700 m0 mb10 border-bottom color-orange pb5">Hướng dẫn thanh toán
+                online</h2>
+              <div>
+                <p>Quý khách vui lòng thanh toán theo thông tin chuyển khoản dưới đây.</p>
+                <p><strong>Ngân hàng:</strong>Vietcombank - Chi nhánh Hà Nội</p>
+                <p><strong>Số tài khoản:</strong>1017829546</p>
+                <p><strong>Tên tài khoản thụ hưởng:</strong>Nguyễn Đình Chí</p>
+                <p><strong>Nội dung chuyển khoản:</strong>CHICHI + (Mã đơn hàng)</p>
+                <p>Để đảm bảo quyền lợi, Quý khách cần lưu ý:</p>
+                <ul>
+                  <li>Khi chuyển khoản qua ngân hàng, trong “Nội dung thanh toán”, vui lòng ghi chính xác Mã đơn hàng;
+                  </li>
+                  <li>Ví dụ: Quý khách có mã đơn hàng #12345 cần thanh toán, nội dung chuyển khoản ghi: CHICHI12345</li>
+                </ul>
+                <p>Lưu ý mã đơn hàng:</p>
+                <ul>
+                  <li>Mã đơn hàng được hiển thị đính kèm trong thông báo đơn hàng, quản lý đơn hàng.</li>
+                  <li>Ngoài ra, mã đơn hàng còn được gửi đính kèm với thông báo đơn hàng được gửi đến địa chỉ email Quý
+                    khách cung cấp ban đầu;</li>
+                  <li>Trường hợp không nhận được mã đơn hàng, vui lòng liên hệ ngay với Chichi.vn</li>
+                </ul>
               </div>
             </div>
           </div>

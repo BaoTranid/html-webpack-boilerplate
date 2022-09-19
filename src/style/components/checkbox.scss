@@ -8,6 +8,18 @@
   -ms-user-select: none;
   user-select: none;
   align-items: center;
+  min-height: 16px;
+  &.size24 {
+    min-height: 24px;
+    .checkmark {
+      height: 24px;
+      width: 24px;
+      line-height: 24px;
+    }
+    .name {
+      margin-left: 35px;
+    }
+  }
   input {
     position: absolute;
     opacity: 0;

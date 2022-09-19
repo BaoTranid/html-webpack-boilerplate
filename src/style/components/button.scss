@@ -22,7 +22,14 @@
   &.orange {
     background-color: #FF4500;
   }
+  &.blue {
+    background-color: #0093FC;
+  }
   &.full {
     width: 100%;
+  }
+  &.height40 {
+    height: 40px;
+    line-height: 40px;
   }
 }
