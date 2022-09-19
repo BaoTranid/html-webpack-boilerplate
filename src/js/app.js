@@ -87,6 +87,19 @@ $('.slider-nav-detail').slick({
   ],
 });
 
+$('.slider-news').slick({
+  dots: true,
+  dotsClass: 'slick-custom-dots',
+  mobileFirst: true,
+  autoplaySpeed: 5000,
+  speed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  infinite: true,
+  arrows: false,
+});
+
 // if (module.hot) {
 //   module.hot.accept();
 // }
