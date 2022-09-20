@@ -1,4 +1,4 @@
-.home-banner-wrapper {
+.home-banner-wrapper, .body-wrapper {
   .nav-left {
     &__title {
       font-size: 16px;
@@ -12,7 +12,7 @@
     &__menu {
       padding: 0;
       margin: 0;
-      min-width: 277px;
+      min-width: 250px;
       li {
         display: flex;
         list-style: none;
@@ -32,6 +32,9 @@
           &:hover {
             opacity: 0.8;
           }
+        }
+        &.active {
+          background-color: #DFDFDF;
         }
       }
     }
