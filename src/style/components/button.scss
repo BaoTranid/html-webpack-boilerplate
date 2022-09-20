@@ -22,6 +22,15 @@
   &.orange {
     background-color: #FF4500;
   }
+  &.orange-border {
+    background-color: transparent;
+    border: 1px solid #FF4500;
+    color: #FF4500;
+    &:hover {
+      background-color: #FF4500;
+      color: #fff;
+    }
+  }
   &.blue {
     background-color: #0093FC;
   }
