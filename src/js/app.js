@@ -1,7 +1,9 @@
-import $ from 'jquery';
+import * as $ from 'jquery';
 import 'bootstrap';
 import '@popperjs/core';
 import 'slick-carousel';
+
+window['jQuery'] = window['$'] = $;
 
 $('.slider-wrapper').slick({
   dots: true,
@@ -98,6 +100,15 @@ $('.slider-news').slick({
   autoplay: true,
   infinite: true,
   arrows: false,
+});
+
+$('.show-pass-toggle').on('click', () => {
+  const id = $(this).data('id');
+  $(`.show-pass[data-id=${id}]`).attr('type', 'text');
+});
+
+$(window).on('load', () => {
+  $('#loginModal').modal('show');
 });
 
 // if (module.hot) {

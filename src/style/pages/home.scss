@@ -46,6 +46,7 @@
   align-items: flex-start;
   &__menu {
     margin-right: 10px;
+    min-width: 277px;
     @media (max-width: 991px) {
       display: none;
     }

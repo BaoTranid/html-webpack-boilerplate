@@ -10,3 +10,51 @@
     }
   }
 }
+
+.sign-up-login-form {
+  padding: 45px 70px;
+  position: relative;
+  @media (max-width: 500px) {
+    padding: 25px 30px;
+  }
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .title {
+    font-size: 28px;
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
+  }
+  &__footer-menu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 -10px;
+    > li {
+      list-style: none;
+      position: relative;
+      margin: 0;
+      padding: 0 10px;
+      &:last-child:after {
+        display: none;
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 2px;
+        height: 12px;
+        background-color: $orange;
+        position: absolute;
+        top: 50%;
+        margin-top: -6px;
+        right: 0;
+      }
+      a {
+        color: $orange;
+      }
+    }
+  }
+}
