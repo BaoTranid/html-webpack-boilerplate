@@ -96,6 +96,41 @@
         }
       }
     }
+    &__box {
+      position: relative;
+      &:hover {
+        .name {
+          height: 100%;
+          padding: 10px;
+          transition-timing-function: ease-in-out;
+        }
+      }
+      .name {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        transition: 0.2s;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, rgba(255, 69, 0, 0) 0%, #FF4500 100%);
+        width: 100%;
+        padding: 20px 10px 5px;
+        height: 50%;
+        @media (max-width: 767px) {
+          height: 90%;
+        }
+        a {
+          font-size: 17px;
+          font-weight: 700;
+          color: #fff;
+          @media (max-width: 767px) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -222,7 +257,7 @@
     &__name2 {
       text-align: center;
       a {
-        color: $orange
+        color: $orange;
       }
     }
   }
