@@ -87,9 +87,12 @@
     margin: 0;
     align-items: flex-start;
     margin: 0 -10px;
+    flex-wrap: wrap;
     > li {
       list-style: none;
       padding: 0 10px;
+      margin-bottom: 20px;
+      flex: 1 auto;
       .title {
         margin: 0;
         font-size: 14px;

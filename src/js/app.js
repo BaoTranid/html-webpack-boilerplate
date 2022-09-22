@@ -102,6 +102,19 @@ $('.slider-news').slick({
   arrows: false,
 });
 
+$('.slider-home').slick({
+  dots: true,
+  dotsClass: 'slick-custom-dots',
+  mobileFirst: true,
+  autoplaySpeed: 5000,
+  speed: 1000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  infinite: true,
+  arrows: false,
+});
+
 $('.show-pass-toggle').on('click', () => {
   const id = $(this).data('id');
   $(`.show-pass[data-id=${id}]`).attr('type', 'text');
