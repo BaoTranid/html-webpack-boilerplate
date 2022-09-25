@@ -17,7 +17,6 @@
   .menu-mobile {
     position: relative;
     width: 250px;
-    padding: 10px;
     z-index: 6;
     background-color: #fff;
     height: 100vh;
@@ -27,27 +26,77 @@
       display: block;
       color: #4C4C4C;
       border: 1px solid #f7f7f7;
-      padding: 5px;
+      padding: 5px 10px;
     }
     &__logo {
       background-color: $orange;
       padding: 10px;
     }
     &__nav {
-      padding: 0;
       margin: 0;
-      padding: 10px 0;
+      padding: 10px;
+      max-height: calc(100vh - 85px);
+      overflow: hidden;
+      overflow-y: auto;
       li {
         list-style: none;
-        margin-bottom: 10px;
-        &:last-child {
-          margin-bottom: 0;
+        .name {
+          display: flex;
+          justify-content: space-between;
+          align-items: stretch;
+          .menu-toggle {
+            cursor: pointer;
+            font-size: 7px;
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            line-height: 20px;
+            text-align: center;
+          }
         }
         a {
+          display: block;
           color: #4C4C4C;
           text-decoration: none;
+          padding: 6px 5px;
+          flex: 1;
           &:hover {
             color: $orange;
+          }
+        }
+      }
+      > li {
+        overflow: hidden;
+        ul {
+          visibility: hidden;
+          padding: 0;
+          padding: 0 8px;
+          height: 0;
+          border-radius: 5px;
+          &.display {
+            visibility: visible;
+            height: auto;
+          }
+        }
+      }
+      > li {
+        > a, > .name a {
+          text-transform: uppercase;
+        }
+      }
+      li {
+        &.active {
+          > a, > .name a {
+            font-weight: 600;
+          }
+        }
+      }
+      > li > ul {
+        background-color: rgba(195,195,195,0.10);
+        > li > ul {
+          background-color: rgba(195,195,195,0.11);
+          > li > ul {
+            background-color: rgba(195,195,195,0.12);
           }
         }
       }

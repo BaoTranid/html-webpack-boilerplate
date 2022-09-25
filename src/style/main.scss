@@ -12,6 +12,7 @@ $red: #FA0000;
 @import "color.scss";
 @import "background.scss";
 @import "border.scss";
+@import "cursor.scss";
 @import "components/form.scss";
 @import "components/checkbox.scss";
 @import "components/textarea.scss";
@@ -49,4 +50,9 @@ body {
 .body-wrapper {
   max-width: 100%;
   overflow: hidden;
+}
+
+.dropdown-menu-comp {
+  border: none!important;
+  background-color: transparent!important;
 }

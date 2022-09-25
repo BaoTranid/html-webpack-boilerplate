@@ -108,6 +108,12 @@
       text-align: center;
       line-height: 25px;
       border: 1px solid #545454;
+      margin-left: 10px;
+      &:hover, &.active {
+        background-color: $orange;
+        color: #fff;
+        border-color: $orange;
+      }
     }
   }
 }
@@ -214,7 +220,7 @@
     outline: none;
     min-width: 260px;
     &:hover {
-      opacity: 0.8;
+      background-color: $orange;
     }
   }
   .detail-price {
@@ -279,6 +285,9 @@
       border: none;
       outline: none;
       border-radius: 5px;
+      &:hover {
+        background-color: #FF4500;
+      }
     }
   }
 }
@@ -296,7 +305,7 @@
       color: #494949;
       text-transform: uppercase;
       padding: 12px;
-      &.active {
+      &:hover, &.active {
         background-color: #FF4500;
         color: #fff;
       }
@@ -442,7 +451,6 @@
     border-left: 1px solid #FF4500;
     border-bottom: 1px solid #FF4500;
     border-right: 1px solid #FF4500;
-    transition: 0.2s;
     &__name {
       text-align: center;
       a {
@@ -636,4 +644,25 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+.sort-list {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  user-select: none;
+  li {
+    list-style: none;
+    cursor: pointer;
+    a {
+      display: block;
+      text-decoration: none;
+      color: #434343;
+      padding: 4px 10px;
+      &:hover, &.active {
+        color: #FF4500;
+      }
+    }
+  }
 }

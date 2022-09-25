@@ -21,6 +21,9 @@
   }
   &.orange {
     background-color: #FF4500;
+    &:hover {
+      background-color: #0095FF;
+    }
   }
   &.orange-border {
     background-color: transparent;
@@ -33,6 +36,9 @@
   }
   &.blue {
     background-color: #0093FC;
+    &:hover {
+      background-color: #FF4500;
+    }
   }
   &.full {
     width: 100%;
@@ -40,5 +46,13 @@
   &.height40 {
     height: 40px;
     line-height: 40px;
+  }
+  &.hover-border {
+    &-white {
+      &:hover {
+        border: 1px solid #fff;
+        box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      }
+    }
   }
 }
